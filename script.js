@@ -4,32 +4,35 @@ class Blog {
         this.title = title;
         this.detail = detail
     }
-    //appending title to the page
+    //for the title of post
     addTitle() {
         this.title_card = document.createElement('h1');
         this.title_card.setAttribute("id", "blog-title");
         this.title_card.innerHTML = this.title;
     }
 
-    //appending the description to the page
+    //for the description of post
     addDescription() {
         this.description_card = document.createElement('p');
         this.description_card.setAttribute("id", "blog-description");
         this.description_card.innerHTML = this.detail;
     }
 
+    //appending title and description
     appendElements() {
         var $divTag = document.createElement('div');
         $divTag.id = "card-text";
 
-
+        //appending the image 
         var $image = document.createElement("img");
         $image.src = "./assets/card image 1.svg";
         $divTag.appendChild($image);
 
+        //appending the title and description 
         $divTag.appendChild(this.title_card)
         $divTag.appendChild(this.description_card)
 
+        //appending the actual div tag to the page
         var $flashboard = document.querySelector("#flashcard");
         $flashboard.appendChild($divTag);
 
@@ -46,6 +49,7 @@ $addBlog.addEventListener("click", function () {
     popup.style.display = "block"
 })
 
+//closing the popup when user clicks the close button
 document.querySelector("#close").addEventListener("click",function(){
     popup.style.display = "none"
 })
