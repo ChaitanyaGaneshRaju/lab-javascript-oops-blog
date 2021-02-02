@@ -66,12 +66,18 @@ nav ul a {
 	margin-bottom: 60px;
 }
 
-.article-card {
-	width: 320px;
-	margin: 30rem 0;
+#flashcard{
 	display: flex;
+	flex-direction: row;
+	width: 100%;
 	flex-wrap: wrap;
-	justify-content: space-between;
+}
+
+#card-text{
+	margin-left:4em;
+	margin-right:4em;
+	width: 15%;
+	height: auto;
 }
 
 .article-card h1 {
@@ -94,7 +100,8 @@ nav ul a {
 .body-div2 {
 	display: flex;
 	flex-direction: row ;
-	/* justify-content: space-between; */
+	width: 100%;
+	justify-content: space-between;
 	float: left;
 }
 
@@ -138,7 +145,6 @@ div#popupContact {
 #card {
 	position: absolute;
 	display: flex;
-	justify-content: flex-center;
 	align-items: center;
 	/* width: 920px; height : 572px; */
 	padding: 108px 0px 0px 18px;
@@ -209,7 +215,7 @@ font-size: 18px;
 line-height: 25px;
 width: 100px;
 height: 39px;
-margin: 71px 64px 103px 784px;
+margin: 10px 64px 10px 784px;
 align-items: center;
 text-align: center;
 background: #6C63FF;
